@@ -1,0 +1,47 @@
+.table, .box, .buttons, .button {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.calculator {
+  width: 350px;
+}
+.table {
+  height: 200px;
+  width: 200px;
+}
+.box {
+  display: inline-block;
+  width: 64.5px;
+  height: 64.5px;
+  float: left;
+}
+.buttons {
+  display:inline-block;
+  width:133px;
+  height: 200px;
+  float: right;
+  position: relative;
+  top: -202px;
+  right: 16px;
+}
+.button {
+  width: 64.5px;
+  height: 64.5px;
+  float: left
+}
+.number {
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  top: 20px;
+}
+.results-box {
+  width: 333px;
+  height: 100px;
+  background-color: #ddd;
+  border: 1px solid black;
+}
+.results {
+  border: none;
+  padding: 0;
+}
