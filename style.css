@@ -1,47 +1,75 @@
-.table, .box, .buttons, .button {
-  border: 1px solid black;
-  border-collapse: collapse;
+body {
+  margin: 50px auto;
+  max-width: 50%;
+  font-family: sans-serif;
 }
+
 .calculator {
+  border-radius: 10px;
+  margin: 20px;
   width: 350px;
+  height: 450px;
+  padding: 30px;
+  background-color: #000;
 }
-.table {
-  height: 200px;
+
+.container {
+  margin: 30px 0;
+}
+
+.numbers-container {
   width: 200px;
 }
-.box {
-  display: inline-block;
-  width: 64.5px;
-  height: 64.5px;
+
+.num-btn, .operand {
+  border-radius: 10px;
+  color: #fff;
+  background-color: grey;
   float: left;
-}
-.buttons {
-  display:inline-block;
-  width:133px;
-  height: 200px;
-  float: right;
-  position: relative;
-  top: -202px;
-  right: 16px;
-}
-.button {
   width: 64.5px;
   height: 64.5px;
-  float: left
+  margin: 1px;
+  font-size: 30px;
 }
+
+.operands-container {
+  display: inline-block;
+  width: 133px;
+}
+
 .number {
-  text-align: center;
-  padding: 30px;
   position: relative;
-  top: 20px;
+  top: 18px;
+  padding: 24px;
 }
-.results-box {
+
+.operator, #equals {
+  position: relative;
+  bottom: 34px;
+  right: 4px;
+  padding: 20px 20px 20px 27px;
+}
+#clearall-btn {
+	width: 130px;
+}
+
+#clearall {
+	font-size: 24px;
+	bottom: 24px;
+    right: 8px;
+}
+.total {
   width: 333px;
   height: 100px;
   background-color: #ddd;
   border: 1px solid black;
 }
-.results {
-  border: none;
-  padding: 0;
+
+#results {
+    font-family: monospace;
+    border: none;
+    text-align: right;
+    position: relative;
+    bottom: 90px;
+    font-size: 90px;
 }
