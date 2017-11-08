@@ -1,3 +1,4 @@
+/*
 // FIND MAX NUMBER IN ARRAY
 let myArray = [1, 2, 3, 4, 5];
 
@@ -21,51 +22,74 @@ function reverse(sentence) {
 }
 
 console.log(reverse('hellloooooo'));
+*/
 
-//ADD
-function add() {
-  return a + b;
-}
-
-//SUBTRACT
-function subtract() {
-  return a - b;
-}
-
-//MULTIPLY
-function multiply() {
-  return a * b;
-}
-
-//DIVIDE
-function add() {
-  return a / b;
-}
-
-//GRID
 $(document).ready(function() {
+  //
+  var consoleLine = "<p class=\"console-line\"></p>";
+  //
+  console = {
+    log: function(text) {
+      $("#console-log").append($(consoleLine).html(text));
+    }
+  };
 
-function createGrid(x) {
-  $('.container').append("<div class='table'></div>");
-  for (let i = 0; i < x; i++) {
-    $('.table').append("<div class='box'><span class='number'>0</span></div>");
-  }
-}
-function createButtons(y) {
-$('.wrapper').append("<div class='buttons'></div>");
-  for (let j = 0; j < y; j++) {
-    $('.buttons').append("<div class='button'></div>");
-  }
-}
-createGrid(9);
-createButtons(6);
+  let arrNum = [];
+  let numberString = '';
+  let numberInt;
+  let operator = [];
+  let totaldiv = $('#results');
+  let result = 0;
+  totaldiv.text('0');
 
-$(".box").each(function(i) {
-    let number = $(this).find(".number").text(++i);
-});
+  $(".number").click(function() {
+    numberString += $(this).text();
+    totaldiv.text(numberString);
+    numberInt = parseFloat(numberString, 10);
+  });
 
-$(".number").click(function() {
-let result = $(this).clone('.number');
-$('.results').append(result);
-});
+  $(".operator").not('#clear', '#clearall').click(function() {
+    operator = $(this).text();
+    totaldiv.text(numberString + operator);
+    arrNum.push(numberInt);
+    numberString = '';
+  });
+
+  $('#clear').click(function() {
+    arrNum[1] = '';
+    totaldiv.text('0');
+  });
+
+  $('#clearall').click(function() {
+    numberString = '';
+    numberInt = 0;
+    arrNum = [];
+    totaldiv.text('0');
+  });
+
+  $('#equals').click(function() {
+    arrNum.push(numberInt);
+    let n1 = arrNum[0];
+    let n2 = arrNum[1];
+
+    switch (operator) {
+      case '+':
+        result = n1 + n2;
+        result.toString(10);
+        break;
+      case '-':
+        result = n1 - n2;
+        result.toString(10);
+        break;
+      case '/':
+        result = n1 / n2;
+        result.toString(10);
+        break;
+      case '*':
+        result = n1 * n2;
+        result.toString(10);
+        break;
+    }
+    totaldiv.text(result);
+  });
 });
