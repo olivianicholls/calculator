@@ -1,12 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+<link href='style.css' type='text/css' rel='stylesheet' />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src='script.js'></script>
+</head>
 <body>
-<div class='results-box'>
-<p class='results'>
-</p>
-</div>
-<section class='calculator'>
-  <div class='container'>
-  </div>
-  <div class='wrapper'>
-  </div>
+  <section class='calculator'>
+    <div class='total'>
+      <p id='results'>
+      </p>
+    </div>
+    <div class='container'>
+      <div class='numbers-container'>
+        <div class='num-btn'><span class='number'>7</span></div>
+        <div class='num-btn'><span class='number'>8</span></div>
+        <div class='num-btn'><span class='number'>9</span></div>
+        <div class='num-btn'><span class='number'>4</span></div>
+        <div class='num-btn'><span class='number'>5</span></div>
+        <div class='num-btn'><span class='number'>6</span></div>
+        <div class='num-btn'><span class='number'>1</span></div>
+        <div class='num-btn'><span class='number'>2</span></div>
+        <div class='num-btn'><span class='number'>3</span></div>
+        <div class='num-btn'><span class='number'>0</span></div>
+		<div class='num-btn'><span class='number'>00</span></div>
+        <div class='num-btn'><span class='number'>.</span></div>
+      </div>
+      <div class='operands-container'>
+        <div class='operand'>
+          <p class='operator'>+</p>
+        </div>
+        <div class='operand'>
+          <p class='operator'>-</p>
+        </div>
+        <div class='operand'>
+          <p class='operator'>/</p>
+        </div>
+        <div class='operand'>
+          <p class='operator'>*</p>
+        </div>
+        <div class='operand'>
+          <p id='equals'>=</p>
+        </div>
+        <div class='operand'>
+          <p class='operator' id='clear'>C</p>
+        </div>
+        <div class='operand' id='clearall-btn'>
+          <p class='operator' id='clearall'>AC</p>
+        </div>
+      </div>
+    </div>
   </section>
 </body>
