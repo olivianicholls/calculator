@@ -20,8 +20,9 @@ body {
 .numbers-container {
 	width: 200px;
 }
-
 .num-btn, .operand {
+  position: relative;
+  top: auto;
 	box-sizing: border-box;
 	border: 3px solid #000;
 	border-radius: 10px;
@@ -36,6 +37,9 @@ body {
 	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 	-webkit-text-stroke-width: 1.3px;
 	-webkit-text-stroke-color: #000;
+}
+.num-btn:hover, .operand:hover {
+  background-color: #e2ad00;
 }
 .operands-container {
 	display: inline-block;
@@ -70,12 +74,14 @@ body {
 	border-radius: 5px;
 }
 #results {
+  overflow: hidden;
 	font-family: monospace;
 	border: none;
 	text-align: right;
 	position: relative;
 	bottom: 90px;
 	right: 10px;
+  padding-left: 10px;
 	font-size: 90px;
 	color: #49AF97;
 	-webkit-text-stroke-width: 2px;
