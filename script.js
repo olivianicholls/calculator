@@ -1,38 +1,4 @@
-/*
-// FIND MAX NUMBER IN ARRAY
-let myArray = [1, 2, 3, 4, 5];
-
-function myMax() {
-  return Math.max.apply(Math, myArray);
-};
-
-console.log(myMax(myArray));
-
-//FIND VOWEL COUNT (DOESNT WORK IF NO VOWELS!)
-let sentence = 'hello world';
-function vowel_count(sentence) {
-  return sentence.match(/[aeiou]/gi).length;
-}
-
-console.log(vowel_count(sentence));
-
-//REVERSE A STRING
-function reverse(sentence) {
-  return sentence.split('').reverse().join('');
-}
-
-console.log(reverse('hellloooooo'));
-*/
-
 $(document).ready(function() {
-  //
-  var consoleLine = "<p class=\"console-line\"></p>";
-  //
-  console = {
-    log: function(text) {
-      $("#console-log").append($(consoleLine).html(text));
-    }
-  };
 
   let arrNum = [];
   let numberString = '';
@@ -42,6 +8,14 @@ $(document).ready(function() {
   let result = 0;
   totaldiv.text('0');
 
+  $('.num-btn').on('click', function() {
+    $(this).animate({'top': '2px'}, 60);
+    $(this).animate({'top': '0'}, 60);
+  });
+  $('.operand').on('click', function() {
+    $(this).animate({'top': '2px'}, 60);
+    $(this).animate({'top': '0'}, 60);
+  });
   $(".number").click(function() {
     numberString += $(this).text();
     totaldiv.text(numberString);
