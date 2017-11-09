@@ -1,60 +1,56 @@
 body {
 	margin: 0 auto;
-  max-width: 400px;
-  font-family: sans-serif;
-  background-color: #BAE2E4;
+	max-width: 400px;
+	font-family: sans-serif;
+	background-color: #BAE2E4;
 }
-
 .calculator {
-  border-radius: 10px;
-  border: 3px solid #000;
-  margin-top: 100px;
-  width: 350px;
-  height: 450px;
-  padding: 30px;
-  background-color: #f0542e;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	border: 3px solid #000;
+	margin-top: 100px;
+	width: 350px;
+	height: 450px;
+	padding: 30px;
+	background-color: #f0542e;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
 .container {
-  margin: 30px 0;
+	margin: 30px 0;
 }
 .numbers-container {
-  width: 200px;
+	width: 200px;
 }
 
 .num-btn, .operand {
 	box-sizing: border-box;
 	border: 3px solid #000;
-  border-radius: 10px;
-  color: #49AF97;
-  background-color: #FFC300;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  float: left;
-  width: 64.5px;
-  height: 64.5px;
-  margin: 1px;
-  font-size: 30px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-  -webkit-text-stroke-width: 1.3px;
-   -webkit-text-stroke-color: black;
+	border-radius: 10px;
+	color: #49AF97;
+	background-color: #FFC300;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+	float: left;
+	width: 64.5px;
+	height: 64.5px;
+	margin: 1px;
+	font-size: 30px;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+	-webkit-text-stroke-width: 1.3px;
+	-webkit-text-stroke-color: #000;
 }
-
 .operands-container {
-  display: inline-block;
-  width: 133px;
+	display: inline-block;
+	width: 133px;
 }
-
 .number {
-    position: relative;
-    text-align: center;
-    bottom: 16px;
+	position: relative;
+	text-align: center;
+	bottom: 16px;
 }
-
 .operator, #equals {
-  position: relative;
-  bottom: 34px;
-  right: 4px;
-  padding: 20px 20px 20px 27px;
+	position: relative;
+	bottom: 34px;
+	right: 4px;
+	padding: 20px 20px 20px 27px;
 }
 #equals, #clear {
 	right: 6px;
@@ -62,29 +58,26 @@ body {
 #clearall-btn {
 	width: 130px;
 }
-
 #clearall {
 	text-align: center;
 	bottom: 38px;
 }
 .total {
-  width: 333px;
-  height: 100px;
-  background-color: #FAF3E5;
-  border: 3px solid #000;
-  border-radius: 5px;
+	width: 333px;
+	height: 100px;
+	background-color: #FAF3E5;
+	border: 3px solid #000;
+	border-radius: 5px;
 }
-
 #results {
-    font-family: monospace;
-    border: none;
-    text-align: right;
-    position: relative;
-    bottom: 90px;
+	font-family: monospace;
+	border: none;
+	text-align: right;
+	position: relative;
+	bottom: 90px;
 	right: 10px;
 	font-size: 90px;
 	color: #49AF97;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: black;
-}
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: black;
 }
