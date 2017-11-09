@@ -50,14 +50,15 @@ $(document).ready(function() {
 
   $(".operator").not('#clear', '#clearall').click(function() {
     operator = $(this).text();
-    totaldiv.text(numberString + operator);
+    totaldiv.text(numberString + '' + operator);
     arrNum.push(numberInt);
     numberString = '';
   });
 
   $('#clear').click(function() {
-    arrNum[1] = '';
-    totaldiv.text('0');
+    numberString = '';
+    numberInt = 0;
+    totaldiv.text(arrNum[0] + '' + operator);
   });
 
   $('#clearall').click(function() {
