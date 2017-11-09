@@ -1,6 +1,6 @@
 body {
-  margin: 100px auto;
-  max-width: 50%;
+	margin: 0 auto;
+  max-width: 400px;
   font-family: sans-serif;
   background-color: #BAE2E4;
 }
@@ -15,11 +15,9 @@ body {
   background-color: #f0542e;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
 }
-
 .container {
   margin: 30px 0;
 }
-
 .numbers-container {
   width: 200px;
 }
