@@ -3,7 +3,8 @@ $(document).ready(function() {
   let arrNum = [];
   let numberString = '';
   let numberInt;
-  let operator = [];
+  let operatorArr = [];
+  let operator = '';
   let totaldiv = $('#results');
   let result = 0;
   totaldiv.text('0');
@@ -17,6 +18,8 @@ $(document).ready(function() {
     $(this).animate({'top': '0'}, 60);
   });
   $(".number").click(function() {
+	numberString = '';
+	numberInt = 0;
     numberString += $(this).text();
     totaldiv.text(numberString);
     numberInt = parseFloat(numberString, 10);
@@ -25,8 +28,9 @@ $(document).ready(function() {
   $(".operator").not('#clear', '#clearall').click(function() {
     operator = $(this).text();
     totaldiv.text(numberString + '' + operator);
-    arrNum.push(numberInt);
-    numberString = '';
+    arrNum.push(numberInt)
+	operatorArr.push(operator);
+	
   });
 
   $('#clear').click(function() {
@@ -47,7 +51,7 @@ $(document).ready(function() {
     let n1 = arrNum[0];
     let n2 = arrNum[1];
 
-    switch (operator) {
+    switch (operatorArr[0]) {
       case '+':
         result = n1 + n2;
         result.toString(10);
@@ -66,5 +70,9 @@ $(document).ready(function() {
         break;
     }
     totaldiv.text(result);
+	arrNum = [];
+	operatorArr = [];
+	numberString = result
+	numberInt = parseFloat(result, 10);
   });
 });
