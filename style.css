@@ -45,26 +45,17 @@ body {
 	display: inline-block;
 	width: 133px;
 }
-.number {
-	position: relative;
+.number,.operator, #equals {
 	text-align: center;
-	bottom: 16px;
+  height: 48px;
+  padding-top: 13px; 
+  margin: 0;
 }
-.operator, #equals {
-	position: relative;
-	bottom: 34px;
-	right: 4px;
-	padding: 20px 20px 20px 27px;
-}
-#equals, #clear {
-	right: 6px;
-}
-#clearall-btn {
+#equals-btn{
 	width: 130px;
 }
-#clearall {
+#equals {
 	text-align: center;
-	bottom: 38px;
 }
 .total {
 	width: 333px;
@@ -84,6 +75,7 @@ body {
   padding-left: 10px;
 	font-size: 90px;
 	color: #49AF97;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 	-webkit-text-stroke-width: 2px;
-	-webkit-text-stroke-color: black;
+	-webkit-text-stroke-color: #000;
 }
