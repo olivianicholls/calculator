@@ -18,19 +18,18 @@ $(document).ready(function() {
     $(this).animate({'top': '0'}, 60);
   });
   $(".number").click(function() {
-	numberString = '';
-	numberInt = 0;
     numberString += $(this).text();
     totaldiv.text(numberString);
-    numberInt = parseFloat(numberString, 10);
+    numberInt = parseFloat(numberString);
   });
 
   $(".operator").not('#clear', '#clearall').click(function() {
     operator = $(this).text();
     totaldiv.text(numberString + '' + operator);
     arrNum.push(numberInt)
+    numberString = '';
 	operatorArr.push(operator);
-	
+
   });
 
   $('#clear').click(function() {
@@ -43,6 +42,7 @@ $(document).ready(function() {
     numberString = '';
     numberInt = 0;
     arrNum = [];
+    result = '';
     totaldiv.text('0');
   });
 
@@ -73,6 +73,6 @@ $(document).ready(function() {
 	arrNum = [];
 	operatorArr = [];
 	numberString = result
-	numberInt = parseFloat(result, 10);
+	numberInt = parseFloat(result);
   });
 });
