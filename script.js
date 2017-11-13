@@ -47,6 +47,7 @@ $(document).ready(function() {
     numberString = '';
     numberInt = 0;
     arrNum = [];
+    operatorArr = [];
     result = 0;
     totaldiv.text('0');
   });
