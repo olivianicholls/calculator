@@ -47,7 +47,7 @@ $(document).ready(function() {
     numberString = '';
     numberInt = 0;
     arrNum = [];
-    result = '';
+    result = 0;
     totaldiv.text('0');
   });
 
