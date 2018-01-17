@@ -1,6 +1,7 @@
 body {
-	margin: 0 auto;
-	max-width: 400px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
 	font-family: sans-serif;
 	background-color: #BAE2E4;
 }
